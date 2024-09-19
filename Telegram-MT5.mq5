@@ -9,7 +9,7 @@
 //+------------------------------------------------------------------+
 //|                                                                  |
 //+------------------------------------------------------------------+
-input string Token = "7539029827:AAHNszvodHcNcNfG214LXiXC68Mb4DgIfIg"; // Token Telegram
+input string Token = ""; // Token Telegram
 
 //---
 #include <Telegram.mqh>
