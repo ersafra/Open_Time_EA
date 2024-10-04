@@ -730,7 +730,6 @@ void count_position(int &count_buy, int &count_sell)
 //+------------------------------------------------------------------+
 datetime mprevBar;
 bool OpenBar(string symbol)
-
 {
   datetime CurBar = iTime(symbol, timeframe, 0);
   if (CurBar == mprevBar)

@@ -205,9 +205,9 @@ void buyCrz496()
 //+------------------------------------------------------------------+
 //|                                                                  |
 //+------------------------------------------------------------------+
-void sellMM()
+void sellCrz496()
   {
-   if(hasOpenPositionWith(simbolo,"sellMM"))
+   if(hasOpenPositionWith(simbolo,"sellCrz496"))
      {
       return;
      }
@@ -242,7 +242,7 @@ void sellMM()
         }
       double sl=(InpStopLoss==0)?0.0:m_symbol_info.Bid()+ExtStopLoss;
       double tp=(InpTakeProfit==0)?0.0:m_symbol_info.Bid()-ExtTakeProfit;
-      OpenSell(0,0,"sellMM");
+      OpenSell(0,0,"sellCrz496");
       return;
      }
 
@@ -292,7 +292,7 @@ void buyCrz50200()
         }
       double sl=(InpStopLoss==0)?0.0:m_symbol_info.Ask()-ExtStopLoss;
       double tp=(InpTakeProfit==0)?0.0:m_symbol_info.Ask()+ExtTakeProfit;
-      OpenBuy(0,0,"buyCr50200");
+      OpenBuy(0,0,"buyCrz50200");
       return;
      }
   }
@@ -302,7 +302,7 @@ void buyCrz50200()
 //+------------------------------------------------------------------+
 void sellCinq()
   {
-   if(hasOpenPositionWith(simbolo,"sellCinq"))
+   if(hasOpenPositionWith(simbolo,"sellCrz50200"))
      {
       return;
      }
@@ -331,7 +331,7 @@ void sellCinq()
 //-------------------Venda
    if(Cinquenta[0]<Duzentos[0] && Cinquenta[1]>Duzentos[1]) // sell
      {
-      if(hasOpenPositionWith(simbolo,"sellCinq"))
+      if(hasOpenPositionWith(simbolo,"sellCrz50200"))
         {
          return;
         }
@@ -343,7 +343,7 @@ void sellCinq()
       double sl=(InpStopLoss==0)?0.0:m_symbol_info.Bid()+ExtStopLoss;
       double tp=(InpTakeProfit==0)?0.0:m_symbol_info.Bid()-ExtTakeProfit;
 
-      OpenSell(0,0,"sellCinq");
+      OpenSell(0,0,"sellCrz50200");
       return;
      }
   }
